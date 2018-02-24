@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body {
+  font-family: 'Lato', sans-serif;
+  background: #323b4e url("../img/main-bg.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* Layout */
+.ba-container {
+  padding-left: 44px;
+  padding-right: 44px;
+  max-width: 600px; }
+
+.gm-main {
+  background: #212534;
+  max-width: 600px;
+  max-height: 541px; }
+
+/* .wrapper {
+	position: relative;
+} */
+.gm-nav {
+  list-style: none;
+  padding-left: 0;
+  background: #2b3040;
+  margin: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .gm-nav__item {
+    display: inline-block; }
+  .gm-nav__item-link {
+    display: block;
+    text-decoration: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 115px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 2px solid transparent; }
+    .gm-nav__item-link:hover {
+      border-bottom: 2px solid #fff; }
+      .gm-nav__item-link:hover span {
+        color: #fff; }
+      .gm-nav__item-link:hover svg {
+        fill: #fff; }
+  .gm-nav__item-icon {
+    fill: #8d91a3;
+    width: 20px;
+    height: 20px; }
+  .gm-nav__item-caption {
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: #b7bacd; }
+
+/* .active a {
+	border-bottom: 2px solid #fff;
+}
+
+.active span {
+	color: #fff;
+}
+.active svg {
+	fill: #fff;
+} */
+.active .gm-nav__item-link {
+  border-bottom: 2px solid #fff; }
+
+.active .gm-nav__item-icon {
+  fill: #fff; }
+
+.active .gm-nav__item-caption {
+  color: #fff; }
+
+.gm-content {
+  display: none; }
+
+.gm-content:first-child {
+  display: block; }
+
+/* Inforamtion  */
+.wrapper-info {
+  margin-left: 20px;
+  position: relative; }
+
+.gm-information {
+  position: relative;
+  padding-top: 54px; }
+  .gm-information__title {
+    font-size: 32px;
+    margin: 0;
+    color: #fff;
+    font-weight: 400; }
+  .gm-information__subtitle {
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 21px; }
+  .gm-information__description {
+    font-size: 14px;
+    color: #b7bacd;
+    line-height: 22px; }
+
+/* Circle bar */
+#rating-bar {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.rating-value {
+  color: #aaadbb;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%); }
+
+.wrapper-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.gm-price__cost {
+  color: #fff;
+  font-size: 32px;
+  margin: 0; }
+
+.sale {
+  font-size: 12px;
+  color: #fedc3f; }
+
+.ba-button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2px; }
+
+.ba-button--green {
+  border: 1px solid #13e28d;
+  background-color: #13e28d;
+  line-height: 53px;
+  padding: 0 35px; }
+  .ba-button--green:hover {
+    color: #13e28d;
+    background-color: transparent; }
+
+/* Star rating */
+.br-wrapper {
+  text-align: center; }
+
+.br-theme-fontawesome-stars .br-widget a {
+  margin-right: 9px; }
+
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+  color: #ffdd3f; }
+
+.br-theme-fontawesome-stars .br-widget a:after {
+  color: #4b536b; }
+
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+  color: #ffdd3f; }
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
